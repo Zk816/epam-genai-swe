@@ -1,11 +1,16 @@
 # GenAI Applications Course
 
-My work for the Generative AI Applications course. Each task lives in its own folder.
+My work for the Generative AI Applications course. 
 
 ## Structure
 
 - `01-intro-research/` - research on GenAI use cases + vocabulary
   - `genai_applications_report.md` - research report
-  - `vocabulary.md` - GenAI terms explained in my own words
+  - `vocabulary.md` - GenAI terms explained
+  - `graph/` - vocabulary relations graph (explicit vs implicit usage in the report)
 
-More folders will be added as the course goes on.
+
+
+## Vocabulary graph
+
+![Vocabulary graph](01-intro-research/graph/vocabulary_graph.png)
