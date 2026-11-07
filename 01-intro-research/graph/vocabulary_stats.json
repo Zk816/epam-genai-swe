@@ -1,0 +1,915 @@
+{
+  "terms": {
+    "LLM": {
+      "explicit": 4,
+      "implicit": 5
+    },
+    "Token": {
+      "explicit": 1,
+      "implicit": 0
+    },
+    "Tokenomics": {
+      "explicit": 1,
+      "implicit": 4
+    },
+    "Context window": {
+      "explicit": 1,
+      "implicit": 3
+    },
+    "Prompt": {
+      "explicit": 0,
+      "implicit": 4
+    },
+    "Prompt injection": {
+      "explicit": 2,
+      "implicit": 0
+    },
+    "Hallucination": {
+      "explicit": 2,
+      "implicit": 4
+    },
+    "Grounding": {
+      "explicit": 2,
+      "implicit": 2
+    },
+    "RAG": {
+      "explicit": 4,
+      "implicit": 5
+    },
+    "Embedding": {
+      "explicit": 1,
+      "implicit": 1
+    },
+    "Vector database": {
+      "explicit": 1,
+      "implicit": 2
+    },
+    "Chunking": {
+      "explicit": 4,
+      "implicit": 0
+    },
+    "Multimodal": {
+      "explicit": 0,
+      "implicit": 5
+    },
+    "Agent": {
+      "explicit": 18,
+      "implicit": 4
+    },
+    "Agentic workflow": {
+      "explicit": 2,
+      "implicit": 5
+    },
+    "Tool calling": {
+      "explicit": 0,
+      "implicit": 4
+    },
+    "Copilot": {
+      "explicit": 10,
+      "implicit": 8
+    },
+    "AI-native tool": {
+      "explicit": 3,
+      "implicit": 1
+    },
+    "Guardrails": {
+      "explicit": 1,
+      "implicit": 3
+    },
+    "Human-in-the-loop": {
+      "explicit": 1,
+      "implicit": 3
+    },
+    "Fine-tuning": {
+      "explicit": 0,
+      "implicit": 3
+    },
+    "Deepfake": {
+      "explicit": 1,
+      "implicit": 1
+    },
+    "PoC": {
+      "explicit": 0,
+      "implicit": 2
+    }
+  },
+  "sections": {
+    "LLM": [
+      "1. Code generation and AI-assisted development",
+      "3. Customer support chatbots and virtual assistants",
+      "4. Knowledge management and enterprise search (RAG)",
+      "5. Content generation (marketing, docs, communication)",
+      "7. Data analysis and BI assistants",
+      "8. Agentic platforms and process automation",
+      "Summary"
+    ],
+    "Token": [
+      "8. Agentic platforms and process automation"
+    ],
+    "Tokenomics": [
+      "3. Customer support chatbots and virtual assistants",
+      "6. Image, video and audio generation",
+      "8. Agentic platforms and process automation",
+      "Summary"
+    ],
+    "Context window": [
+      "1. Code generation and AI-assisted development",
+      "7. Data analysis and BI assistants"
+    ],
+    "Prompt": [
+      "1. Code generation and AI-assisted development",
+      "4. Knowledge management and enterprise search (RAG)",
+      "7. Data analysis and BI assistants"
+    ],
+    "Prompt injection": [
+      "3. Customer support chatbots and virtual assistants",
+      "8. Agentic platforms and process automation"
+    ],
+    "Hallucination": [
+      "1. Code generation and AI-assisted development",
+      "3. Customer support chatbots and virtual assistants",
+      "4. Knowledge management and enterprise search (RAG)",
+      "7. Data analysis and BI assistants",
+      "9. DevOps, incident analysis and security"
+    ],
+    "Grounding": [
+      "3. Customer support chatbots and virtual assistants",
+      "4. Knowledge management and enterprise search (RAG)"
+    ],
+    "RAG": [
+      "1. Code generation and AI-assisted development",
+      "3. Customer support chatbots and virtual assistants",
+      "4. Knowledge management and enterprise search (RAG)",
+      "Summary"
+    ],
+    "Embedding": [
+      "4. Knowledge management and enterprise search (RAG)"
+    ],
+    "Vector database": [
+      "1. Code generation and AI-assisted development",
+      "4. Knowledge management and enterprise search (RAG)"
+    ],
+    "Chunking": [
+      "4. Knowledge management and enterprise search (RAG)"
+    ],
+    "Multimodal": [
+      "6. Image, video and audio generation"
+    ],
+    "Agent": [
+      "1. Code generation and AI-assisted development",
+      "2. Test generation and QA automation",
+      "3. Customer support chatbots and virtual assistants",
+      "8. Agentic platforms and process automation"
+    ],
+    "Agentic workflow": [
+      "8. Agentic platforms and process automation",
+      "Summary"
+    ],
+    "Tool calling": [
+      "1. Code generation and AI-assisted development",
+      "7. Data analysis and BI assistants",
+      "8. Agentic platforms and process automation"
+    ],
+    "Copilot": [
+      "1. Code generation and AI-assisted development",
+      "3. Customer support chatbots and virtual assistants",
+      "4. Knowledge management and enterprise search (RAG)",
+      "5. Content generation (marketing, docs, communication)",
+      "7. Data analysis and BI assistants",
+      "8. Agentic platforms and process automation",
+      "9. DevOps, incident analysis and security"
+    ],
+    "AI-native tool": [
+      "1. Code generation and AI-assisted development"
+    ],
+    "Guardrails": [
+      "1. Code generation and AI-assisted development",
+      "4. Knowledge management and enterprise search (RAG)",
+      "8. Agentic platforms and process automation",
+      "Summary"
+    ],
+    "Human-in-the-loop": [
+      "1. Code generation and AI-assisted development",
+      "3. Customer support chatbots and virtual assistants",
+      "8. Agentic platforms and process automation",
+      "Summary"
+    ],
+    "Fine-tuning": [
+      "5. Content generation (marketing, docs, communication)",
+      "6. Image, video and audio generation"
+    ],
+    "Deepfake": [
+      "6. Image, video and audio generation"
+    ],
+    "PoC": [
+      "6. Image, video and audio generation"
+    ]
+  },
+  "edges": [
+    {
+      "source": "LLM",
+      "target": "Token",
+      "weight": 1
+    },
+    {
+      "source": "LLM",
+      "target": "Tokenomics",
+      "weight": 3
+    },
+    {
+      "source": "LLM",
+      "target": "Context window",
+      "weight": 2
+    },
+    {
+      "source": "LLM",
+      "target": "Prompt",
+      "weight": 3
+    },
+    {
+      "source": "LLM",
+      "target": "Prompt injection",
+      "weight": 2
+    },
+    {
+      "source": "LLM",
+      "target": "Hallucination",
+      "weight": 4
+    },
+    {
+      "source": "LLM",
+      "target": "Grounding",
+      "weight": 2
+    },
+    {
+      "source": "LLM",
+      "target": "RAG",
+      "weight": 4
+    },
+    {
+      "source": "LLM",
+      "target": "Embedding",
+      "weight": 1
+    },
+    {
+      "source": "LLM",
+      "target": "Vector database",
+      "weight": 2
+    },
+    {
+      "source": "LLM",
+      "target": "Chunking",
+      "weight": 1
+    },
+    {
+      "source": "LLM",
+      "target": "Agent",
+      "weight": 3
+    },
+    {
+      "source": "LLM",
+      "target": "Agentic workflow",
+      "weight": 2
+    },
+    {
+      "source": "LLM",
+      "target": "Tool calling",
+      "weight": 3
+    },
+    {
+      "source": "LLM",
+      "target": "Copilot",
+      "weight": 6
+    },
+    {
+      "source": "LLM",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "LLM",
+      "target": "Guardrails",
+      "weight": 4
+    },
+    {
+      "source": "LLM",
+      "target": "Human-in-the-loop",
+      "weight": 4
+    },
+    {
+      "source": "LLM",
+      "target": "Fine-tuning",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Tokenomics",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Prompt injection",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Agent",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Agentic workflow",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Tool calling",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Copilot",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Guardrails",
+      "weight": 1
+    },
+    {
+      "source": "Token",
+      "target": "Human-in-the-loop",
+      "weight": 1
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Prompt injection",
+      "weight": 2
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Hallucination",
+      "weight": 1
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Grounding",
+      "weight": 1
+    },
+    {
+      "source": "Tokenomics",
+      "target": "RAG",
+      "weight": 2
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Multimodal",
+      "weight": 1
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Agent",
+      "weight": 2
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Agentic workflow",
+      "weight": 2
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Tool calling",
+      "weight": 1
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Copilot",
+      "weight": 2
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Guardrails",
+      "weight": 2
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Human-in-the-loop",
+      "weight": 3
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Fine-tuning",
+      "weight": 1
+    },
+    {
+      "source": "Tokenomics",
+      "target": "Deepfake",
+      "weight": 1
+    },
+    {
+      "source": "Tokenomics",
+      "target": "PoC",
+      "weight": 1
+    },
+    {
+      "source": "Context window",
+      "target": "Prompt",
+      "weight": 2
+    },
+    {
+      "source": "Context window",
+      "target": "Hallucination",
+      "weight": 2
+    },
+    {
+      "source": "Context window",
+      "target": "RAG",
+      "weight": 1
+    },
+    {
+      "source": "Context window",
+      "target": "Vector database",
+      "weight": 1
+    },
+    {
+      "source": "Context window",
+      "target": "Agent",
+      "weight": 1
+    },
+    {
+      "source": "Context window",
+      "target": "Tool calling",
+      "weight": 2
+    },
+    {
+      "source": "Context window",
+      "target": "Copilot",
+      "weight": 2
+    },
+    {
+      "source": "Context window",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "Context window",
+      "target": "Guardrails",
+      "weight": 1
+    },
+    {
+      "source": "Context window",
+      "target": "Human-in-the-loop",
+      "weight": 1
+    },
+    {
+      "source": "Prompt",
+      "target": "Hallucination",
+      "weight": 3
+    },
+    {
+      "source": "Prompt",
+      "target": "Grounding",
+      "weight": 1
+    },
+    {
+      "source": "Prompt",
+      "target": "RAG",
+      "weight": 2
+    },
+    {
+      "source": "Prompt",
+      "target": "Embedding",
+      "weight": 1
+    },
+    {
+      "source": "Prompt",
+      "target": "Vector database",
+      "weight": 2
+    },
+    {
+      "source": "Prompt",
+      "target": "Chunking",
+      "weight": 1
+    },
+    {
+      "source": "Prompt",
+      "target": "Agent",
+      "weight": 1
+    },
+    {
+      "source": "Prompt",
+      "target": "Tool calling",
+      "weight": 2
+    },
+    {
+      "source": "Prompt",
+      "target": "Copilot",
+      "weight": 3
+    },
+    {
+      "source": "Prompt",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "Prompt",
+      "target": "Guardrails",
+      "weight": 2
+    },
+    {
+      "source": "Prompt",
+      "target": "Human-in-the-loop",
+      "weight": 1
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Hallucination",
+      "weight": 1
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Grounding",
+      "weight": 1
+    },
+    {
+      "source": "Prompt injection",
+      "target": "RAG",
+      "weight": 1
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Agent",
+      "weight": 2
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Agentic workflow",
+      "weight": 1
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Tool calling",
+      "weight": 1
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Copilot",
+      "weight": 2
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Guardrails",
+      "weight": 1
+    },
+    {
+      "source": "Prompt injection",
+      "target": "Human-in-the-loop",
+      "weight": 2
+    },
+    {
+      "source": "Hallucination",
+      "target": "Grounding",
+      "weight": 2
+    },
+    {
+      "source": "Hallucination",
+      "target": "RAG",
+      "weight": 3
+    },
+    {
+      "source": "Hallucination",
+      "target": "Embedding",
+      "weight": 1
+    },
+    {
+      "source": "Hallucination",
+      "target": "Vector database",
+      "weight": 2
+    },
+    {
+      "source": "Hallucination",
+      "target": "Chunking",
+      "weight": 1
+    },
+    {
+      "source": "Hallucination",
+      "target": "Agent",
+      "weight": 2
+    },
+    {
+      "source": "Hallucination",
+      "target": "Tool calling",
+      "weight": 2
+    },
+    {
+      "source": "Hallucination",
+      "target": "Copilot",
+      "weight": 5
+    },
+    {
+      "source": "Hallucination",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "Hallucination",
+      "target": "Guardrails",
+      "weight": 2
+    },
+    {
+      "source": "Hallucination",
+      "target": "Human-in-the-loop",
+      "weight": 2
+    },
+    {
+      "source": "Grounding",
+      "target": "RAG",
+      "weight": 2
+    },
+    {
+      "source": "Grounding",
+      "target": "Embedding",
+      "weight": 1
+    },
+    {
+      "source": "Grounding",
+      "target": "Vector database",
+      "weight": 1
+    },
+    {
+      "source": "Grounding",
+      "target": "Chunking",
+      "weight": 1
+    },
+    {
+      "source": "Grounding",
+      "target": "Agent",
+      "weight": 1
+    },
+    {
+      "source": "Grounding",
+      "target": "Copilot",
+      "weight": 2
+    },
+    {
+      "source": "Grounding",
+      "target": "Guardrails",
+      "weight": 1
+    },
+    {
+      "source": "Grounding",
+      "target": "Human-in-the-loop",
+      "weight": 1
+    },
+    {
+      "source": "RAG",
+      "target": "Embedding",
+      "weight": 1
+    },
+    {
+      "source": "RAG",
+      "target": "Vector database",
+      "weight": 2
+    },
+    {
+      "source": "RAG",
+      "target": "Chunking",
+      "weight": 1
+    },
+    {
+      "source": "RAG",
+      "target": "Agent",
+      "weight": 2
+    },
+    {
+      "source": "RAG",
+      "target": "Agentic workflow",
+      "weight": 1
+    },
+    {
+      "source": "RAG",
+      "target": "Tool calling",
+      "weight": 1
+    },
+    {
+      "source": "RAG",
+      "target": "Copilot",
+      "weight": 3
+    },
+    {
+      "source": "RAG",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "RAG",
+      "target": "Guardrails",
+      "weight": 3
+    },
+    {
+      "source": "RAG",
+      "target": "Human-in-the-loop",
+      "weight": 3
+    },
+    {
+      "source": "Embedding",
+      "target": "Vector database",
+      "weight": 1
+    },
+    {
+      "source": "Embedding",
+      "target": "Chunking",
+      "weight": 1
+    },
+    {
+      "source": "Embedding",
+      "target": "Copilot",
+      "weight": 1
+    },
+    {
+      "source": "Embedding",
+      "target": "Guardrails",
+      "weight": 1
+    },
+    {
+      "source": "Vector database",
+      "target": "Chunking",
+      "weight": 1
+    },
+    {
+      "source": "Vector database",
+      "target": "Agent",
+      "weight": 1
+    },
+    {
+      "source": "Vector database",
+      "target": "Tool calling",
+      "weight": 1
+    },
+    {
+      "source": "Vector database",
+      "target": "Copilot",
+      "weight": 2
+    },
+    {
+      "source": "Vector database",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "Vector database",
+      "target": "Guardrails",
+      "weight": 2
+    },
+    {
+      "source": "Vector database",
+      "target": "Human-in-the-loop",
+      "weight": 1
+    },
+    {
+      "source": "Chunking",
+      "target": "Copilot",
+      "weight": 1
+    },
+    {
+      "source": "Chunking",
+      "target": "Guardrails",
+      "weight": 1
+    },
+    {
+      "source": "Multimodal",
+      "target": "Fine-tuning",
+      "weight": 1
+    },
+    {
+      "source": "Multimodal",
+      "target": "Deepfake",
+      "weight": 1
+    },
+    {
+      "source": "Multimodal",
+      "target": "PoC",
+      "weight": 1
+    },
+    {
+      "source": "Agent",
+      "target": "Agentic workflow",
+      "weight": 1
+    },
+    {
+      "source": "Agent",
+      "target": "Tool calling",
+      "weight": 2
+    },
+    {
+      "source": "Agent",
+      "target": "Copilot",
+      "weight": 3
+    },
+    {
+      "source": "Agent",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "Agent",
+      "target": "Guardrails",
+      "weight": 2
+    },
+    {
+      "source": "Agent",
+      "target": "Human-in-the-loop",
+      "weight": 3
+    },
+    {
+      "source": "Agentic workflow",
+      "target": "Tool calling",
+      "weight": 1
+    },
+    {
+      "source": "Agentic workflow",
+      "target": "Copilot",
+      "weight": 1
+    },
+    {
+      "source": "Agentic workflow",
+      "target": "Guardrails",
+      "weight": 2
+    },
+    {
+      "source": "Agentic workflow",
+      "target": "Human-in-the-loop",
+      "weight": 2
+    },
+    {
+      "source": "Tool calling",
+      "target": "Copilot",
+      "weight": 3
+    },
+    {
+      "source": "Tool calling",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "Tool calling",
+      "target": "Guardrails",
+      "weight": 2
+    },
+    {
+      "source": "Tool calling",
+      "target": "Human-in-the-loop",
+      "weight": 2
+    },
+    {
+      "source": "Copilot",
+      "target": "AI-native tool",
+      "weight": 1
+    },
+    {
+      "source": "Copilot",
+      "target": "Guardrails",
+      "weight": 3
+    },
+    {
+      "source": "Copilot",
+      "target": "Human-in-the-loop",
+      "weight": 3
+    },
+    {
+      "source": "Copilot",
+      "target": "Fine-tuning",
+      "weight": 1
+    },
+    {
+      "source": "AI-native tool",
+      "target": "Guardrails",
+      "weight": 1
+    },
+    {
+      "source": "AI-native tool",
+      "target": "Human-in-the-loop",
+      "weight": 1
+    },
+    {
+      "source": "Guardrails",
+      "target": "Human-in-the-loop",
+      "weight": 3
+    },
+    {
+      "source": "Fine-tuning",
+      "target": "Deepfake",
+      "weight": 1
+    },
+    {
+      "source": "Fine-tuning",
+      "target": "PoC",
+      "weight": 1
+    },
+    {
+      "source": "Deepfake",
+      "target": "PoC",
+      "weight": 1
+    }
+  ]
+}
